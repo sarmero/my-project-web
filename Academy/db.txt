@@ -1,0 +1,62 @@
+CREATE TABLE IF NOT EXISTS public.author
+(
+    id bigserial,
+    first_name character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    last_name character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    born_date date NOT NULL,
+    CONSTRAINT author_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE IF NOT EXISTS public.category
+(
+    id smallserial,
+    name character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    state boolean NOT NULL DEFAULT true,
+    CONSTRAINT category_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE IF NOT EXISTS public."user"
+(
+    id bigserial,
+    usrname character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    first_name character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    last_name character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    gender "char" NOT NULL DEFAULT '-'::"char",
+    CONSTRAINT user_pkey PRIMARY KEY (id),
+    CONSTRAINT user_usrname_key UNIQUE (usrname)
+)
+
+
+--- Datos
+
+
+/*
+
+Categorias
+
+1	"Comedia"	true
+2	"Ficción"	true
+3	"Terror"	true
+4	"Infantiles"	false
+5	"ciencia"	true
+6	"com. rom."	true
+
+
+Usuarios
+
+1	"12345"	"7b36fa67c2f982245c94675e45bcc15c"	"Jorge"	"Rivera"	"M"
+2	"54321"	"7b36fa67c2f982245c94675e45bcc15c"	"María"	"Martínez"	"F"
+3	"98765"	"d1a70ce880db3c3e93e28545a6052ca2"	"María Jose"	"Pérez"	"-"
+
+
+Autores
+
+1	"Gabriel"	"Garcia Marquez"	"2023-05-11"
+2	"Gabriel"	"Garcia Marquez"	"2023-05-11"
+3	"Gabriel"	"Rivera Rosero"	"2023-05-26"
+4	"Gabriel"	"Quiñones"	"2023-05-26"
+5	"Pedro"	"Perez"	"2023-05-29"
+6	"Shakira"	"Mevarak"	"2023-05-04"
+
+*/
