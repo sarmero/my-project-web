@@ -1,0 +1,24 @@
+
+<?php
+    //include: si no encuentra el recurso, continua
+    //requiere: si no encuentra el recurso, produce falla fatal (detiene la app)
+
+    include_once "./commons/db.php";
+
+    //Preparar la consulta que se va a ejecutar
+    $s = $db->prepare('SELECT * FROM public.category'); 
+
+    //Ejecutamos la consulta
+    $s->execute();
+    
+    //mostrando datos resultado de la consulta
+    $c = $s->fetchAll();
+
+    //var_dump me permite ver el contenido de una variable
+    var_dump($c);
+
+    echo "Primera categoría: ".$c[0]['name'];
+    echo "segunda categoría: ".$c[1]['name'];
+    echo "Tercera categoría: ".$c[2]['name'];
+
+?>

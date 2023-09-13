@@ -1,0 +1,167 @@
+.blog-header {
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 0px solid;
+  margin-top: 2px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 200px;
+  align-items: right;
+  border: green 1px solid;
+  border-radius: 22px;
+}
+
+.profile-cover {
+  width: 200px;
+  height: 200px;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: #66ced6;
+}
+
+h2,h3 {
+  font-size: 1em;
+}
+
+.detail{
+  color: #2D0320;
+}
+
+.jumbotron {
+  width: 98%;
+  height: 280px;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-items: center;
+  border-radius: 15px;
+  border: green 1px solid;
+  background-image: linear-gradient(236deg,#392B58,green );
+  /*background-image: url(/Academy/image/back.jpg)*/
+  
+}
+
+.flex-nowrap {
+  /*background-color: #5e2e2a;*/
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+body, html {
+  background-image: linear-gradient(236deg, #66ced6,#2D0320);
+}
+
+p {
+  line-height: 1.4;
+}
+
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #bae498;
+}
+
+a:visited {
+  color: white;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  color: #cdfeaa;
+}
+
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
+
+fieldset {
+  border-color: darkgoldenrod;
+  background-color: #66ced6;
+  color: firebrick;
+  border: 9px groove (internal value);
+  border-radius: 7px;
+}
+
+legend {
+  color: #2D0320;
+  font-weight: bold;
+}
+
+article{
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: justify;
+  
+}
+
+.accordion-item {
+  background-color: inherit;
+  color: #66ced6;
+}
+
+.accordion-button{
+  background-color: inherit;
+  border-bottom: 1px solid;
+  color: #cdfeaa;
+}
+
+.accordion-item, .accordion-button:focus {
+  background-color: inherit;
+}
+
+.accordion-item,.accordion-button:link {
+  background-color: inherit;
+  color: #cdfeaa;
+}
+
+.accordion-item,.accordion-button:hover {
+  background-color: inherit;
+  color: #cdfeaa;
+}
+
+.accordion-collapse{
+  background-color: inherit;
+  color: #66ced6;
+}
+
+.dropdown-menu{
+  background-color: #2D0320;
+}
+
+.page-link{
+  background-color: inherit;
+  
+}
+
+
+
+

@@ -1,0 +1,1 @@
+<h1>Error al registrar user</h1>

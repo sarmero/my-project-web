@@ -1,0 +1,1 @@
+<h1>Error al registrar el pensum</h1>

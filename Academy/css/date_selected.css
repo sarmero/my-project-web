@@ -1,0 +1,86 @@
+.calendar {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+  }
+  .calendar-header {
+    background-color:rgb(33, 37, 41);
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  .calendar-header button {
+    background-color: inherit;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+  }
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .calendar-day {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    color: white;
+  }
+  .selected {
+    background-color: #3498db;
+    color: #fff;
+  }
+  .time-selector {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  .calendar-day:hover .time-selector {
+    display: block;
+  }
+  .time-selector input {
+    width: 70px;
+  }
+  .time-selector label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .time-selector button {
+    margin-top: 5px;
+    background-color: blue;
+    justify-content: center;
+  }
+  #selectedDatesTable {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #selectedDatesTable th,
+  #selectedDatesTable td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: white;
+  }
+  #selectedDatesTable th.day-of-week-column {
+    width: 150px;
+  }
+  #selectedDatesTable th.day-column,
+  #selectedDatesTable th.month-column,
+  #selectedDatesTable th.year-column {
+    width: 100px;
+  }
+
+  .calendar-day.disabled {
+    color: darkcyan;
+    cursor: not-allowed;
+  }
+
+  label{
+    color: white;
+  }
+

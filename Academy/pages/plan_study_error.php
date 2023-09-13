@@ -1,0 +1,1 @@
+<h1>Error al registrar el plan of study</h1>

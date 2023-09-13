@@ -1,0 +1,179 @@
+.post-panel {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.chat-panel {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.post {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: inherit;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+
+#notifications {
+  flex: 1;
+  background-color: inherit;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.user {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-right: 10px;
+  border: 1px solid lightgreen;
+  background-color: inherit;
+  border-radius: 7px;
+}
+
+.user:hover {
+  border: 1px solid lightblue;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+nav {
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+li {
+  color: white;
+}
+
+p {
+  color: white;
+  padding-top: 5px;
+}
+
+.actions {
+  border-top: 1px solid #66ced6;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.btn {
+  background-color: inherit;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+text {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  color: #2e3133;
+  border-color: #fbffad;
+}
+
+.text:focus {
+  color: #2e3133;
+  border-color: #fbffad;
+}
+
+.fake-textarea {
+  border: 1px solid white;
+  width: 30rem;
+  height: 20rem;
+  padding: .5rem;
+  min-height: 3rem;
+  border-radius: 4px;
+  color: white;
+}
+.fake-textarea:empty::before {
+  position: absolute;
+  content: "Escribe aquí...";
+  border-color: #fbffad;
+}
+
+.child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.message-user {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #eee;
+  background-color: inherit;
+  border-radius: 7px;
+  justify-content: space-evenly;
+  margin-right: 30px;
+}
+
+.message-response {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid yellow;
+  background-color: inherit;
+  border-radius: 7px;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+input{
+  border-radius: 9px;
+  border: 1px solid #eee;
+  background-color: inherit;
+  color:white;
+  width: 140%;
+  text-decoration-color: #fbffad;
+}
+
+.search{
+  border-radius: 9px;
+  border: 1px solid #bada55;
+  background-color: inherit;
+  color:white;
+  width: 70%;
+}
+
+::placeholder {
+  color: #e1e2ca;
+}
+
+input[type="text"],input[type="numeric"]
+{
+  font-size: 70%;
+}
+
+.scroller-chat {
+  height: 400px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+.scroller {
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-color: #007 #bada55;
+}
